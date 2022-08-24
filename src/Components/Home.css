@@ -1,0 +1,36 @@
+.mynavbg {
+    /* background: linear-gradient(90deg, rgb(36, 2, 59) 0%, rgb(36, 2, 56) 40%, rgb(41, 33, 28) 100%, rgb(49, 27, 1) 100%);  */
+
+    /* background-color:#314152; */
+    /* background: transparent; */
+    padding: 5px 25px 5px 25px;
+    z-index: 2;
+}
+
+.mybutn {
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    width: auto;
+    padding: 10px 20px;
+    margin: 10px;
+    /* background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(80,45,100,1) 40%, rgba(36,33,31,1) 100%, rgba(252,176,69,1) 100%);  */
+    color: wheat;
+    background-color: #00A0E4;
+}
+
+.mybutn2 {
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    width: auto;
+    padding: 10px 20px;
+    margin: 10px;
+    /* background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(80,45,100,1) 40%, rgba(36,33,31,1) 100%, rgba(252,176,69,1) 100%);  */
+    color: wheat;
+    background-color: #242b2e;
+}
+
+.mybutn:hover {
+    background-color: #3bbef7;
+}
