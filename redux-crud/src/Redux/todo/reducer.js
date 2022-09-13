@@ -16,9 +16,11 @@ const todoReducer = (state = [], action) => {
                     text: action.text,
                 }
             ]
+            break;
         case ActionTypes.DeleteData:
             copyState.splice(action.index, 1)
             return copyState;
+            break;
         case ActionTypes.EditItem:
             const index = state.findIndex(obj => obj.id === action.id);
             return [

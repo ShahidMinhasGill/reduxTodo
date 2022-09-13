@@ -24,7 +24,7 @@ export const DeleteItem = (index) => {
     }
 };
 export const editItem = (text, updateId, getdata) => {
-    console.log('action update', updateId);
+    console.log('action update', getdata);
     return {
         type: ActionTypes.EditItem,
         index: text,

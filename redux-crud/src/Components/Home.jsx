@@ -7,7 +7,15 @@ import secndPage from '../Components/secondPage/SecondPage';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
+    const count = useSelector((state) => state.counter.count);
+    const dispatch = useDispatch();
 
+    const increment = () => {
+        dispatch(increaseCounter());
+    }
+    const decrement = () => {
+        dispatch(decreseCounter());
+    }
 
     return (
         <div>
@@ -16,7 +24,12 @@ export default function Home() {
                     <Navbar.Collapse className="justify-content-center">
                         <Navbar.Text>
 
-
+                            <Button className="mybutn" onClick={increment}>
+                                Count +
+                            </Button>
+                            <Button className="mybutn2" onClick={decrement}>
+                                Count -
+                            </Button>
                             <Link to='/add/todo'>
                                 <Button className="mybutn2" >
                                     Add Todo
@@ -28,7 +41,7 @@ export default function Home() {
                                 </Button>
                             </Link>
 
-
+                            <span>{count}</span>
 
                         </Navbar.Text>
                     </Navbar.Collapse>
